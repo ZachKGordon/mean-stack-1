@@ -1,30 +1,16 @@
 {
-  "name": "mean-stack-1",
+  "name": "mean-stack-1-redux",
   "version": "0.1.0",
-  "description": "Simple CRUD app to demonstrate the MEAN stack",
+  "description": "Client-side angular app",
   "main": "Gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mollyfish/mean-stack-1.git"
-  },
-  "author": [
-    "Molly Kent <kent.molly@gmail.com>",
-    "Zach Gordon <zachkgordon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mollyfish/mean-stack-1/issues"
-  },
-  "homepage": "https://github.com/mollyfish/mean-stack-1#readme",
   "dependencies": {
     "angular": "^1.4.7",
+    "angular-cookies": "^1.4.7",
     "angular-route": "^1.4.7",
     "body-parser": "^1.14.1",
     "connect-livereload": "^0.5.3",
     "express": "^4.13.3",
+    "github-api": "git://github.com/jedfoster/github.git",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-changed": "^1.1.1",
@@ -39,6 +25,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.4.1",
     "gulp-util": "^3.0.4",
+    "gulp-webserver": "^0.9.1",
     "jshint-stylish": "^2.0.1",
     "lodash": "^3.3.1",
     "merge-stream": "^0.1.7",
@@ -48,5 +35,23 @@
     "vinyl-source-stream": "~1.0.0",
     "webpack": "^1.12.2",
     "webpack-stream": "^2.1.1"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZachKGordon/mean-stack-1.git"
+  },
+  "author": [
+    "Molly Kent <kent.molly@gmail.com>",
+    "Zach Gordon <zachkgordon@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZachKGordon/mean-stack-1/issues"
+  },
+  "homepage": "https://github.com/ZachKGordon/mean-stack-1#readme"
 }

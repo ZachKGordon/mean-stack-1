@@ -20,11 +20,16 @@ module.exports = {
     dest: dest + "/views/",
   },
   server: {
-    serverFile: './server.js'
+    src: dest,
+    livereload: true,
+    directoryListing: false,
+    open: false,
+    port: 9000
   },
   production: {
     cssSrc: dest + '/styles/*.css',
     jsSrc: dest + '/*.js',
-    dest: dest
+    cssDest: dest + '/css/',
+    jsDest: dest + '/js/'
   }
 };
